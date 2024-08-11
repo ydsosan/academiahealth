@@ -139,7 +139,7 @@ footer {
         "pie-de-pagina";
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
     .container {
         grid-template-areas:
             "menu seccion-principal"
