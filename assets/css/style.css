@@ -177,4 +177,7 @@ footer {
     text-decoration: none;
     color: white;
 }
+.nav_hamburguer {
+    display: none;
+}
 }
