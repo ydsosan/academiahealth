@@ -13,17 +13,21 @@
     overflow: hidden;
 }
 
+i {
+    text-decoration: none;
+}
 .nav {
     display: grid;
     justify-content: space-between;
     align-items: center;
     grid-template-columns: repeat(2, max-content);
 }
-.fa-car {
+.fa-school {
     padding-right: 1em;
 }
 .inicio {
     display: flex;
+    padding-right: 1em;
 }
 .nav_hamburguer {
     text-decoration: none;
@@ -36,12 +40,15 @@
 header {
     padding: 1em;
     grid-area: menu;
-    background: #0037a1;
+    background: #4C688B;
     color: white;
     height: 200hv;
 
 }
 
+.nav_item a:hover {
+    color: #051B38;
+}
 main {
     grid-area: seccion-principal;
     padding: 0;
@@ -53,16 +60,20 @@ main {
     display: flex;
     flex-direction: column;
     padding: 1em;
-    background-color: rgb(219, 219, 219);
+    background-color: #6FA698;
 }
 .productos {
     padding: 1em;
 }
 .card img {
-    max-width: 50%;
+    max-width: 60%;
     padding: 1em;
+    transition: transform 0.5s;
 }
 
+.card img:hover {
+    transform: scale(1.1);
+}
 .card {
     background-color: white;
     display: flex;
@@ -86,10 +97,15 @@ main {
 }
 
 button {
-    background-color: #0037a1;
+    background-color: #0E5342;
     color: white;
     border-radius: 2px;
     height: 40px;
+    transition: background-color 0.5s linear;
+}
+
+button:hover {
+    background-color: #051B38;
 }
 .pagination {
     display: inline-block;
@@ -115,7 +131,7 @@ button {
 }
 footer {
     grid-area: pie-de-pagina;
-    background: #011236;
+    background: #051B38;
     color: white;
     padding: 10px;
     text-align: center;
@@ -138,6 +154,8 @@ footer {
         "seccion-principal"
         "pie-de-pagina";
 }
+
+
 
 @media (min-width: 576px) {
     .container {
